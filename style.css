@@ -1,0 +1,122 @@
+body{
+    background-color: #1e1d1d;
+}
+*{
+    scroll-behavior: smooth;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+.p{
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    padding-top: 140px; 
+    padding-left: 10px;
+}
+.p:hover{
+    position: absolute;
+    background-image: linear-gradient(180deg, #ec1a1ae7, #000000d0);
+    box-shadow: 0 0 100px #ec1a1ae7;
+    transition: all 0.5s ease-in-out;
+}
+.n{
+    color: transparent;
+    -webkit-text-stroke: 1px #e93737;
+    position: relative;
+}
+.n::before{
+    content: "Aeron Sandrei Dapat";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #e93737;
+    border-right: #e93737;
+    transition: 0.5s ease-in-out;
+}
+.n:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 50px #e93737);
+}
+.h1{
+    color: transparent;
+    letter-spacing: 10px;
+    -webkit-text-stroke: 1px #e93737;
+    position: relative;
+}
+.h1::before{
+    content: "ASD";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #e93737;
+    border-right: #e93737;
+    transition: 0.5s ease-in-out;
+}
+.h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 50px #e93737);
+}
+.card{
+    background-color: inherit;
+	color: white;
+	width: 700px;
+	height: 400px;
+	margin: 40px;
+    margin-left:70px;
+    margin-top: 250px;
+	border-radius: 15px;
+	border: 2px solid #1dc3d9;
+	transition: 0.5s;
+	cursor: pointer;
+	animation: zoomIn 0.5s ease;
+}
+.card:hover {
+	background-color: inherit;
+	color: black;
+	width: 700px;
+	height: 400px;
+	margin: 40px;
+    margin-left: 100px;
+    margin-top: 250px;
+	border-radius: 15px;
+	border: 2px solid #1dc3d9;
+	transform: scale(1.20);
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0 0 100px #1dc3d9;
+}
+.proj{
+    background-image: url(img/project.png);
+}
+.img {
+    height: 398px;
+    width: 700px;
+    border-radius: 15px;
+}
+
+
+
+
+@keyframes zoomIn {
+	from{
+		transform: scale(0.00);
+		opacity: 0;
+}to{
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar { display: none; }
